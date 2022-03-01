@@ -7,4 +7,4 @@ function testArray)(arg){
 }
 
 var result = testArray([])
-console.log(result)
+console.log(result);
