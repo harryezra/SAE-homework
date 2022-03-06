@@ -1,0 +1,29 @@
+img {
+  width: 50px;
+  transition: 0.5s;
+}
+
+.shakeNo {
+  animation: shakeNo 1s 1 forwards;
+}
+
+@keyframes shakeNo {
+  0% {
+    transform: rotate(-0deg);
+  }
+  20% {
+    transform: rotate(-25deg);
+  }
+  40% {
+    transform: rotate(-25deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  80% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
+}

@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rbga(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.overlay.overlayBackground {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
