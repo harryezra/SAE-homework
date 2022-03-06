@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Doctor's form</title>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <form id="doctorsForm">
+      <div>
+        <label for="patient-name">Patient name:</label>
+
+        <input
+          type="text"
+          id="patient-name"
+          required
+          onkeypress="return event.keyCode != 32"
+        />
+
+        <div class="error" id="patient-name-field-error">
+          Please fill in the patient's name before submitting the data.
+        </div>
+      </div>
+      <div>
+        <label for="patient-last-name">Patient last name:</label>
+        <input
+          type="text"
+          id="patient-last-name"
+          required
+          onkeypress="return event.keyCode != 32"
+        />
+        <div class="error" id="patient-last-name-field-error">
+          Please fill in the patient's last name before submitting the data.
+        </div>
+      </div>
+      <div>
+        <label for="age">Age: </label>
+
+        <input type="number" id="age" step="1" required min="18" />
+        <div class="error" id="patient-age-field-error">
+          The patient must be over the age of 18.
+        </div>
+      </div>
+      <div>
+        <label for="sex">Sex: </label>
+
+        <select name="sex" id="sex" required>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Robot">Robot</option>
+        </select>
+        <div class="error" id="sex-field-error">
+          Please select a value for the patient's gender.
+        </div>
+      </div>
+      <div>
+        <label for="phone">Phone: </label>
+        <input type="text" id="phone" />
+        <div class="error" id="phone-field-error"></div>
+      </div>
+      <div>
+        <label for="email">Email: </label>
+
+        <input type="email" id="email" />
+        <div class="error" id="email-field-error">
+          Please fill in the patient's email address.
+        </div>
+      </div>
+      <div>
+        <label for="message">Message: </label> <br />
+        <textarea id="message"></textarea>
+        <div class="error" id="message-field-error"></div>
+      </div>
+
+      <input type="submit" value="Submit Form" onclick="submitForm()" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.error {
+  color: red;
+  padding-top: 5px;
+}
+
+#patient-name-field-error {
+  display: none;
+}
+#patient-last-name-field-error {
+  display: none;
+}
+#patient-age-field-error {
+  display: none;
+}
+#sex-field-error {
+  display: none;
+}
+#phone-field-error {
+  display: none;
+}
+#email-field-error {
+  display: none;
+}
+#message-field-error {
+  display: none;
+}
+
+#doctorsForm div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
