@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match making</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <form id="matching-app-form">
+      <div>First name: <input type="text" id="first-name-field" /></div>
+      <div>Second name: <input type="text" id="second-name-field" /></div>
+
+      <input
+        type="button"
+        value="Submit"
+        onclick="displayMatchingPercentage()"
+      />
+    </form>
+
+    <label for="matchPercentage">Matching percentage: </label>
+
+    <progress id="match-percentage" value="0" max="100"></progress>
+
+    <span id="percentageText"></span>
+  </body>
+</html>
